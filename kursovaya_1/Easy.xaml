@@ -1,0 +1,29 @@
+﻿<Window x:Class="kursovaya_1.Easy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursovaya_1"
+        mc:Ignorable="d"
+        Title="Easy" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="CYcuPRxUAAATdE_.jpg"/>
+        </Grid.Background>
+        <Border BorderThickness="1" Margin="37,20,27,43" Background="#FF007652" CornerRadius ="60">
+            <ListView x:Name="List" Margin="24,20,20,83" Background="#FF007652" BorderBrush="{x:Null}" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="10" OpacityMask="#FF252222" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel Height="50" Width="600">
+                            <TextBlock Text="{Binding Easy}" FontWeight="Bold" Margin="70,0,0,0" Foreground="White" FontSize="40"/>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+        <Button Content="Выйти в меню" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Margin="81,305,0,0" BorderBrush="White" Foreground="White" Background="#FF007652" Height="41" FontFamily="Segoe UI Semibold" FontSize="23" Click="menu_click"/>
+        <Button Content="Удалить задачу" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Margin="532,305,0,0" BorderBrush="White" Foreground="White" Background="#FF007652" Height="41" FontFamily="Segoe UI Semibold" FontSize="23" Click="delete_click"/>
+        <Button Content="Перейти к задаче" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Margin="307,305,0,0" BorderBrush="White" Foreground="White" Background="#FF007652" Height="41" FontFamily="Segoe UI Semibold" FontSize="20" Click="ping_click"/>
+        
+    </Grid>
+</Window>

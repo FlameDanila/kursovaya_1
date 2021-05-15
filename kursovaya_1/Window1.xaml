@@ -1,0 +1,27 @@
+﻿<Window x:Class="kursovaya_1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursovaya_1"
+        mc:Ignorable="d"
+        Title="Меню" Height="622" Width="945">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="CYcuPRxUAAATdE_.jpg"/>
+        </Grid.Background>
+        <Border BorderThickness="1" Margin="37,20,27,59" Background="#FF007652" CornerRadius ="60">
+            <ListView x:Name="list" Margin="24,20,20,25" Background="#FF007652" BorderBrush="{x:Null}" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="22" OpacityMask="#FF252222" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel Height="100" Width="732">
+                            <TextBlock Text="{Binding login}" FontWeight="Bold" Margin="70,53,0,0"/>
+                            <TextBlock Text="{Binding pass}" Margin="420,53,0,0"/>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+    </Grid>
+</Window>
